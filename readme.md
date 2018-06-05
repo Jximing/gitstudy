@@ -12,3 +12,5 @@
     git branch -r -D origin/BranchName
 - 远程删除git服务器上的分支
     git push origin -d BranchName其中-d也可以是--delete，如：git push origin --delete BranchName
+## 保存用户名密码
+    $ git config credential.helper store
