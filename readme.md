@@ -13,4 +13,10 @@
 - 远程删除git服务器上的分支
     git push origin -d BranchName其中-d也可以是--delete，如：git push origin --delete BranchName
 ## 保存用户名密码
-    $ git config credential.helper store
+    $ git config credential.helper store 
+## 常用命令
+- 检查空白错误<br>
+$ git diff  --check
+
+## git理解 
+     push自己的代码前一定要先pull，因为git要求在本地合并文件。你在push时如果别人已经push了一个版本上去你的版本就不是最新的，所以需要先pull先获取最新的版本，再push。
