@@ -17,7 +17,9 @@
 ## 常用命令
 - 检查空白错误<br>
 $ git diff  --check
-
+- 创建并切换分支<br>
+$ git branch branchname(创建分支)<br>$ git checkout branchname(切换分支)<br>
+$ git checkout  -b branchname(等同于上面两步)
 ## git理解 
      push自己的代码前一定要先pull，因为git要求在本地合并文件。你在push时如果别人已经push了一个版本上去你的版本就不是最新的，所以需要先pull先获取最新的版本，再push。
 
