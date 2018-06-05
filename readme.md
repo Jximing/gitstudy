@@ -20,3 +20,11 @@ $ git diff  --check
 
 ## git理解 
      push自己的代码前一定要先pull，因为git要求在本地合并文件。你在push时如果别人已经push了一个版本上去你的版本就不是最新的，所以需要先pull先获取最新的版本，再push。
+
+## git提交代码流程
+- 查看修改了哪些文件<br>
+$ git status
+- 添加修改的文件至暂存区<br>
+$ git add  . (添加所以文件)<br>
+$ git add  filename (添加单个文件)<br>
+$ git add  -i (交互式暂存)<br>
