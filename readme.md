@@ -83,6 +83,6 @@ $ git commit --amend 提交后想添加或修改文件，先运行git add再运�
 - 从每一个提交移除一个文件<br>
 $ git filter-branch --tree-filter 'rm -f filename' HEAD (错误的提交了某个文件时使用)
 - 还原版本<br>
-$ git filter-branch --tree-filter 'rm -f filename' HEAD (错误的提交了某个文件时使用)
+$ git reset --hard HEAD~
 
 
