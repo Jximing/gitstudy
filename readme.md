@@ -58,6 +58,8 @@ $ git diff  --check
 - 创建并切换分支<br>
 $ git branch branchname(创建分支)<br>$ git checkout branchname(切换分支)<br>
 $ git checkout  -b branchname(等同于上面两步)
+- 创建远程分支
+$ git push <br><远程主机名>  <本地分支名>：<远程分支名>
 - 查看分支
 <br>$ git branch(本地)<br>
  $ git branch -r(远程) <br>
