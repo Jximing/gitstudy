@@ -30,22 +30,22 @@ $ git push orign master
 
 # git理解 
      push自己的代码前一定要先pull，因为git要求在本地合并文件。你在push时如果别人已经push了一个版本上去你的版本就不是最新的，所以需要先pull先获取最新的版本，再push。
-两个人同时clone了一个仓库进行开发,A在此基础上提后B的仓库看起了就像这样的<br>
-![ ](.\pic\1.JPG)<br>
-此时B不能直接提交文件，必须将远程分支合并进本地后才能提交，合并后的仓库<br>
-![ ](.\pic\1.1.JPG)<br>
-提交后B的仓库<br>
-![ ](.\pic\2.JPG)<br>
-在此期间，A在一个特性分支上工作。她创建了一个称作 issue54 的特性分支并且在那个分支上做了三次提交。 她还没有抓取B的改动，所以她的提交历史看起来像这样：<br>
-![ ](.\pic\3.JPG)<br>
+两个人同时clone了一个仓库进行开发,A在此基础上提后B的仓库看起了就像这样的  
+![ ](http://pd6gqz232.bkt.clouddn.com/1.jpg)  
+此时B不能直接提交文件，必须将远程分支合并进本地后才能提交，合并后的仓库  
+![ ](http://pd6gqz232.bkt.clouddn.com/1.1.JPG)  
+提交后B的仓库  
+![ ](http://pd6gqz232.bkt.clouddn.com/2.JPG)  
+在此期间，A在一个特性分支上工作。她创建了一个称作 issue54 的特性分支并且在那个分支上做了三次提交。 她还没有抓取B的改动，所以她的提交历史看起来像这样：  
+![ ](http://pd6gqz232.bkt.clouddn.com/3.JPG)  
 从仓库进行抓取后<br>
-![ ](.\pic\3.1.JPG)<br>
+![ ](http://pd6gqz232.bkt.clouddn.com/3.1.JPG)<br>
 合并 issue54 和远程分支后<br>
-![ ](.\pic\4.JPG)<br>
+![ ](http://pd6gqz232.bkt.clouddn.com/4.JPG)<br>
 推送到仓库<br>
-![ ](.\pic\6.JPG)<br>
+![ ](http://pd6gqz232.bkt.clouddn.com/6.JPG)<br>
 整个工作的流程就是在一个特性分支工作一会儿，当它准备好整合时合并回你的 master 分支。 当想要共享工作时，将其合并回你自己的 master 分支，如果有改动的话然后抓取并合并 origin/master，最终推送到服务器上的 master 分支。<br>
-![ ](.\pic\7.JPG)<br>
+![ ](http://pd6gqz232.bkt.clouddn.com/7.JPG)<br>
 # 常用命令
 - 初始化本地仓库<br>
 $ git init 
@@ -58,8 +58,10 @@ $ git diff  --check
 - 创建并切换分支<br>
 $ git branch branchname(创建分支)<br>$ git checkout branchname(切换分支)<br>
 $ git checkout  -b branchname(等同于上面两步)
-- 创建远程分支
-$ git push <br><远程主机名>  <本地分支名>：<远程分支名>
+- 创建远程分支  
+$ git push <远程主机名>  <本地分支名>：<远程分支名>
+- 设置对远程分支的追踪  
+$  git branch --set-upstream-to=origin/dev
 - 查看分支
 <br>$ git branch(本地)<br>
  $ git branch -r(远程) <br>
