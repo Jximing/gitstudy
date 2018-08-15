@@ -22,7 +22,8 @@ $ git add . (添加所以文件)<br>
 $ git add filename (添加单个文件)<br>
 $ git add -i (交互式暂存)<br>
 - 提交文件至本地仓库<br>
-$ git commit -m ""
+$ git commit -m ""  
+$ git commit --amend -m "message"(将本次提交补充在上次提交中，即不产生额外的提交记录)
 - 拉取远程仓库文件<br>
 $ git pull 等同于 $ git fetch + $ git merge
 - 推送本地文件至远程仓库<br>
