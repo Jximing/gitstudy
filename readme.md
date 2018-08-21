@@ -87,5 +87,7 @@ $ git commit --amend 提交后想添加或修改文件，先运行git add再运�
 $ git filter-branch --tree-filter 'rm -f filename' HEAD (错误的提交了某个文件时使用)
 - 还原版本<br>
 $ git reset --hard HEAD~
-
-
+- 查看提交日志  
+$ git log
+- 查看所有的提交历史包括已经被删除的commit记录  
+$ git reflog 
