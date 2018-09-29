@@ -8,6 +8,12 @@
     $ git config --global user.email test@example.com
     $ git config --global gui.encoding utf-8
     $ git config credential.helper store(保存密码) 
+
+
+>git 默认中文文件名是 \xxx\xxx 等八进制形式
+>是因为对0x80以上的字符进行quote
+>只需要git config –global core.quotepath false 
+>core.quotepath设为false的话，就不会对0x80以上的字符进行quote。中文显示正常。
 #  git基础
 每次你提交更新，或在 Git 中保存项目状态时，它主要对当时的全部文件制作一个快照并保存这个快照的索引。<br>
 ![ ](http://pd6gqz232.bkt.clouddn.com/%E5%9F%BA%E7%A1%80.JPG)<br>
